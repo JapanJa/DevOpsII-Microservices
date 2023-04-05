@@ -16,3 +16,5 @@ def get_single_book(book_id):
     book = bk.find_book(book_id)
     return jsonify(book)
 
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5004, debug=True)
